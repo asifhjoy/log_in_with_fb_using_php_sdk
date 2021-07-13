@@ -7,7 +7,7 @@ if(isset($_SESSION['access_token']))
       exit();
   }
 
- $redirect = "http://localhost/social_login/callback.php";
+ $redirect = "YOUR URL/callback.php";
  $data = ['email'];
  $fullurl = $handler->getLoginUrl($redirect,$data);
  

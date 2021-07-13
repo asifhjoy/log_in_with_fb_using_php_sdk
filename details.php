@@ -20,7 +20,7 @@ if(isset($_POST['logout'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
+    <title>Account Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,7 +31,8 @@ if(isset($_POST['logout'])){
 
         <h3 style="color:white;">Name : <?php echo $_SESSION['userData']['name'];?> </h3>
 
-        <h3 style="color:white;">Email : <?php echo $_SESSION['userData']['email'];?> </h3>
+        <?php if($_SESSION['userData']['email']){?>
+        <h3 style="color:white;">Email : <?php echo $_SESSION['userData']['email'];?> </h3><?php }?>
         
 
             <form action="" method="POST">

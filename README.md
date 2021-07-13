@@ -2,4 +2,5 @@
 1. Create a login app from facebook developers site
 2. Set up your app
 3. Put your app_id and app_secret in config.php
-4. Enjoy
+4. Set $redirect in index.php
+5. Enjoy
